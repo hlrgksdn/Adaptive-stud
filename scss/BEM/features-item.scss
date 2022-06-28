@@ -1,0 +1,23 @@
+.features-item{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 20px;
+    
+}
+
+.features-item__icon{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-color: $basic-button-color;
+}
+
+.features-item__description{
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+    font-size: 14px;
+    line-height: 18px;
+
+}

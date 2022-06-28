@@ -1,0 +1,47 @@
+.main-promo{
+    display: flex;
+    flex-direction:column;
+    background-image: url(../../img/main_promo/index-background-mobile@1x.jpg);
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Oswald';
+    color: $basic-white-color;
+
+}
+
+
+.main-promo__title{
+    margin: 0;
+    padding: 0;
+    margin-top: 27px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.main-promo__subtitle{
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.main-promo__image{
+    align-self: center;
+    margin-top: 29px;
+}
+
+.main-promo__button{
+    justify-self: end;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    margin: 0 20px;
+    font-family: 'Oswald';
+    font-size: 14px;
+    line-height: 18px;
+}

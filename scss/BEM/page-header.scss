@@ -1,0 +1,92 @@
+.page-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+    width: 100%;
+
+    @media (min-width: $tablet) {
+        grid-template-columns: 1fr 2fr;
+        min-height: 80px;
+        align-items: center;
+        gap: 100px;
+    }
+
+    @media (min-width: $descktop) {
+        grid-template-columns: min-content min-content;
+        width: $descktop;
+        margin: 0 auto;
+    }
+}
+
+.main-nav_toggle{
+    @media (min-width: 768px) {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+}
+.page-header__logo{
+    min-width: 191px;
+}
+
+.page-header__nav{
+    grid-column: 1/-1;
+
+    @media (min-width: 768px){
+        grid-column: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.main-nav__list{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+    @media (min-width: $tablet ){
+        grid-column: auto;
+        grid-template-columns: max-content max-content max-content;
+        justify-content: space-between;
+    }
+
+    @media (min-width: $descktop) {
+        width: 478px;
+    }
+    
+    
+}
+
+.site-list__item{
+    min-height: 68px;
+    display: grid;
+    align-content: center;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    @media(min-width: 768px){
+        min-height:auto;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+.site-list__item a{
+    text-decoration: none;
+    color: black;
+}
+
