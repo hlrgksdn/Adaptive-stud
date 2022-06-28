@@ -24,20 +24,54 @@ $basic-button-color: #68B738;
 $basic-background-color: #f2f2f2;
 $special-button-color: #5EAA2F; 
 $error-color: #FF8282;
-$basic-white-color: #ffffff;  
+$basic-white-color: #ffffff; 
+$basic-black-color: #000000; 
 
 
 /* Var-media */
 
-$mobile: 320px;
-$tablet: 768px;
-$descktop: 1444px; 
+$mobile-width: 320px;
+$mobile-width-only: 767px;
+$tablet-width: 768px;
+$descktop-width: 1444px; 
 
 /* Global */ 
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+.page__body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 320px;
+}
+
+.container{
+  padding: 0 20px;
+  min-width: 320px;
+
+  @media (min-width :$tablet-width) {
+    padding: 0 30px;
+  }
 }
 
 .visually-hidden {
@@ -53,3 +87,5 @@ img {
     overflow: hidden;
   }
 
+
+@import "bem/page-header.scss"

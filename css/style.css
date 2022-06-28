@@ -13,9 +13,42 @@
 /* Var-color */
 /* Var-media */
 /* Global */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 320px;
+}
+
+.container {
+  padding: 0 20px;
+  min-width: 320px;
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
 }
 
 .visually-hidden {
@@ -30,5 +63,108 @@ img {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page-header__logo {
+  min-height: 66px;
+  padding-top: 12px;
+}
+@media (min-width: 768px) {
+  .page-header__logo {
+    padding-top: 0;
+    margin-top: 24px;
+  }
+}
+
+.main-nav__toggle {
+  width: 18px;
+  height: 18px;
+  margin-top: 23px;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  background-image: url(../../img/page_header/icon-close.svg);
+}
+@media (min-width: 768px) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+.main-nav {
+  width: 100%;
+  text-align: center;
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .main-nav {
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.main-nav__item {
+  height: 66px;
+}
+@media (max-width: 767px) {
+  .main-nav__item {
+    margin: 0 -20px;
+    border-top: 1px solid #E6E6E6;
+    padding-top: 22px;
+  }
+}
+@media (min-width: 768px) {
+  .main-nav__item {
+    margin-top: 42px;
+  }
+  .main-nav__item:nth-child(2) {
+    margin-left: 34px;
+  }
+  .main-nav__item:nth-child(3) {
+    margin-left: 36px;
+  }
+}
+
+.main-nav__item a {
+  color: #000000;
+}
+.main-nav__item a:hover, .main-nav__item a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+.main-nav__item a:hover:active, .main-nav__item a:focus:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-nav__link {
+  position: relative;
+}
+.main-nav__link--active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 2px;
+  background-color: #68B738;
 }
 /*# sourceMappingURL=style.css.map */
