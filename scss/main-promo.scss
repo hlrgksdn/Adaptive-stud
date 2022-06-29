@@ -1,0 +1,45 @@
+.page-main__promo{    
+
+    @media(max-width: $mobile-width-only){
+        min-height: 480px;
+        margin: 0 -20px;
+        background: url(../img/main_promo/index-background-mobile@1x.jpg) top no-repeat,             linear-gradient(to bottom, $special-button-color 63.5% , $basic-white-color 63.5%);
+    }
+}
+
+.main-promo{
+
+    padding: 0 20px;
+    
+    @media(max-width: $mobile-width-only){
+        color: $basic-white-color;
+        font-family: 'Oswald';
+        text-align: center;
+        background-image: url(../img/main_promo/index-can-mobile@1x.png) ,
+        url(../img/main_promo/index-background-mobile@1x.jpg) ,
+        linear-gradient(to bottom, $special-button-color 63.5% , $basic-white-color 63.5%);
+        background-position: bottom 43px right 50%, top, top;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+    }
+}
+
+.main-promo__title{
+    padding-top: 27px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.main-promo__subtitle{
+    font-size: 14px;
+    line-height: 14px;
+    padding-top: 25px;
+    text-transform: uppercase;
+}
+
+.main-promo__button{
+    margin-top:302px;
+    height: 42px;
+    width: 100%;
+
+}

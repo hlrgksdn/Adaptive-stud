@@ -1,0 +1,16 @@
+.button{
+    border: none;
+    outline: none;
+    background-color: $basic-button-color;
+    color: $basic-white-color;
+    font-family: 'Oswald';
+
+    &:focus,
+    &:hover{
+        background-color: $special-button-color;
+    }
+
+    &:active{
+        color: fade-out($basic-white-color, .7);
+    }
+}

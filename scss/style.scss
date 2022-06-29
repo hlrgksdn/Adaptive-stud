@@ -72,6 +72,12 @@ img {
   @media (min-width :$tablet-width) {
     padding: 0 30px;
   }
+
+  @media (min-width: $descktop-width) {
+    padding: 0 110px;
+    width: 1444px;
+    margin: 0 auto;
+  }
 }
 
 .visually-hidden {
@@ -88,4 +94,8 @@ img {
   }
 
 
-@import "page-header.scss"
+@import "page-header.scss";
+
+@import "button.scss";
+
+@import "main-promo.scss"
