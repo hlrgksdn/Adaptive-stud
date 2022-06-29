@@ -43,7 +43,7 @@ img {
 
 .container {
   padding: 0 20px;
-  min-width: 320px;
+  min-width: 340px;
 }
 @media (min-width: 768px) {
   .container {
@@ -101,7 +101,7 @@ img {
   border: none;
   outline: none;
   background-color: #ffffff;
-  background-image: url(../../img/page_header/icon-close.svg);
+  background-image: url(../img/page_header/icon-close.svg);
 }
 @media (min-width: 768px) {
   .main-nav__toggle {
@@ -211,24 +211,26 @@ img {
 }
 
 @media (max-width: 767px) {
-  .page-main__promo {
-    min-height: 480px;
+  .main-promo__wrapper {
+    position: relative;
+    z-index: -1;
+    min-height: 305px;
     margin: 0 -20px;
-    background: url(../img/main_promo/index-background-mobile@1x.jpg) top no-repeat, linear-gradient(to bottom, #5EAA2F 63.5%, #ffffff 63.5%);
+    background-color: #5EAA2F;
+    background-image: url(../img/main_promo/index-background-mobile@1x.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
 }
 
-.main-promo {
-  padding: 0 20px;
-}
 @media (max-width: 767px) {
   .main-promo {
+    position: relative;
     color: #ffffff;
     font-family: "Oswald";
     text-align: center;
-    background-image: url(../img/main_promo/index-can-mobile@1x.png), url(../img/main_promo/index-background-mobile@1x.jpg), linear-gradient(to bottom, #5EAA2F 63.5%, #ffffff 63.5%);
-    background-position: bottom 43px right 50%, top, top;
-    background-repeat: no-repeat, no-repeat, no-repeat;
   }
 }
 
@@ -246,9 +248,22 @@ img {
   text-transform: uppercase;
 }
 
+.main-promo__img {
+  position: absolute;
+  min-width: 280px;
+  bottom: 43px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
 .main-promo__button {
-  margin-top: 302px;
+  margin-top: 135px;
   height: 42px;
   width: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */
