@@ -601,4 +601,135 @@ img {
     margin-left: 25px;
   }
 }
+
+.page-main__features {
+  margin-top: 27px;
+}
+@media (min-width: 768px) {
+  .page-main__features {
+    margin-top: 45px;
+  }
+}
+@media (min-width: 1444px) {
+  .page-main__features {
+    margin-top: 71px;
+  }
+}
+
+.features__title {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+@media (min-width: 768px) {
+  .features__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.features__list {
+  margin-top: 38px;
+}
+@media (min-width: 768px) {
+  .features__list {
+    margin-top: 32px;
+  }
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  .features-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+    row-gap: 37px;
+    padding-top: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .features-list {
+    justify-content: space-between;
+  }
+}
+
+.features-list__item {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.features-list__item span {
+  display: none;
+}
+@media (min-width: 768px) {
+  .features-list__item span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 118px;
+    top: -40px;
+    color: #f2f2f2;
+    font-family: "Oswald";
+    font-size: 280px;
+    line-height: 280px;
+  }
+}
+@media (min-width: 1444px) {
+  .features-list__item span {
+    left: auto;
+    right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .features-list__item {
+    flex-direction: column;
+    width: 50%;
+    min-height: 280px;
+    align-items: start;
+    gap: 31px;
+  }
+}
+@media (min-width: 1444px) {
+  .features-list__item {
+    width: auto;
+  }
+}
+
+.features-list__icon {
+  display: flex;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: #68B738;
+}
+.features-list__icon img {
+  align-self: center;
+}
+@media (min-width: 768px) {
+  .features-list__icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.features-list__description {
+  flex: 1;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+@media (min-width: 768px) {
+  .features-list__description {
+    width: 210px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
