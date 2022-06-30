@@ -1,0 +1,105 @@
+.page-main__catalog{
+    margin-top: 20px;
+}
+
+.catalog-preview{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.catalog-preview__item{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: $basic-background-color;
+}
+
+.preview-item__icon{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-top: 24px;
+    border-radius: 50%;
+    background-color: $basic-button-color;
+
+    &--thin{
+        &::after{
+            content: "";
+            position: absolute;
+            width: 36px;
+            height: 50px;
+            left: 7px;
+            bottom: 3px;
+            background-image: url(../img/prewiev_item/icon-cat-slim.svg);
+            background-repeat: no-repeat;
+        }
+    }    
+
+    &--power{
+        &::after{
+            content: "";
+            position: absolute;
+            width: 67px;
+            height: 28px;
+            left: -9.5px;
+            bottom: 11px;
+            background-image: url(../img/prewiev_item/icon-cat-pro.svg);
+            background-repeat: no-repeat;
+        }    
+    }
+    
+}
+
+.preview-item__title{
+    font-family: 'Oswald';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 37px;
+    margin-top: 30px;
+    margin-left: 19px;
+    text-transform: uppercase;
+}
+
+.preview-item__description{
+    width: 95%;
+    margin-top: 22px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+
+}
+
+.preview-item__link{
+    height: 57px;
+    width: 100%;
+    margin-top: 23px;
+    padding-top: 19px;
+    border-top: 1px solid #d9d9d9;
+    
+    & a{
+        position: relative;
+        color: $basic-black-color;
+        font-family: 'Oswald';
+        font-style: normal;
+        font-size: 16px;
+        line-height: 16px;
+        text-transform: uppercase;
+
+        &::after{
+            content: "";
+            position: absolute;
+            width: 32px;
+            height: 10px;
+            margin-left: 17px;
+            top: 7px;
+            background-image: url(../img/prewiev_item/icon-right-arrow-long.svg);
+            background-repeat: no-repeat;
+        }
+
+    }
+}
+
