@@ -7,6 +7,14 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
+
+    @media (min-width:$descktop-width){
+        flex-direction: row;
+        gap: 80px;
+        margin-top: 72px;
+    }
+
+    
 }
 
 .catalog-preview__item{
@@ -15,6 +23,21 @@
     padding-left: 20px;
     padding-right: 20px;
     background-color: $basic-background-color;
+
+    @media (min-width: $tablet-width){
+        flex-direction: column;
+        position: relative;
+        min-height: 372px;
+        padding-left: 52px;
+    }
+
+    @media(min-width:$descktop-width){
+        flex-direction: row;
+        flex: 1;
+        min-width: 374px;
+
+    }
+    
 }
 
 .preview-item__icon{
@@ -24,6 +47,23 @@
     margin-top: 24px;
     border-radius: 50%;
     background-color: $basic-button-color;
+
+    @media (min-width: $tablet-width){
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        right: 62px;
+        top: 81px;
+    }
+
+    @media(min-width:$descktop-width){
+        position: relative;
+        right: auto;
+        top: auto;
+        margin-top: 47px;
+        width: 100px;
+        height: 100px;
+    }
 
     &--thin{
         &::after{
@@ -35,6 +75,20 @@
             bottom: 3px;
             background-image: url(../img/prewiev_item/icon-cat-slim.svg);
             background-repeat: no-repeat;
+
+            @media (min-width: $tablet-width){
+                width: 140px;
+                height: 192px;
+                bottom: 19px;
+                left: 30px;
+            }
+
+            @media(min-width:$descktop-width){
+                width: 70px;
+                height: 97px;
+                bottom: 9px;
+                left: 19px;
+            }
         }
     }    
 
@@ -48,6 +102,20 @@
             bottom: 11px;
             background-image: url(../img/prewiev_item/icon-cat-pro.svg);
             background-repeat: no-repeat;
+
+            @media (min-width: $tablet-width){
+                width: 268px;
+                height: 112px;
+                bottom: 44px;
+                left: -36px;
+            }
+
+            @media(min-width:$descktop-width){
+                width: 134px;
+                height: 56px;
+                bottom: 24px;
+                left: -19px;
+            }
         }    
     }
     
@@ -61,6 +129,20 @@
     margin-top: 30px;
     margin-left: 19px;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width){
+        margin-left: 1px;
+        margin-top: 77px;
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    @media (min-width: $descktop-width){
+        margin-left: 62px;
+        margin-top: 77px;
+        font-size: 36px;
+        line-height: 36px;
+    }
 }
 
 .preview-item__description{
@@ -71,6 +153,20 @@
     font-size: 14px;
     line-height: 18px;
 
+    @media (min-width: $tablet-width){
+        width: 60%;
+        margin-top: 24px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    @media (min-width: $descktop-width){
+        width: 95%;
+        margin-top: 39px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
 }
 
 .preview-item__link{
@@ -78,7 +174,21 @@
     width: 100%;
     margin-top: 23px;
     padding-top: 19px;
-    border-top: 1px solid #d9d9d9;
+
+    @media (max-width:$mobile-width-only){
+        border-top: 1px solid #d9d9d9;
+    }
+
+    @media (min-width:$tablet-width){
+        margin-top: 48px;
+        padding: 0;
+    }
+
+    @media (min-width:$descktop-width){
+        margin-top: 23px;
+        padding: 0;
+    }
+    
     
     & a{
         position: relative;
@@ -89,6 +199,21 @@
         line-height: 16px;
         text-transform: uppercase;
 
+        @media (min-width:$tablet-width){
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        @media (min-width:$tablet-width){
+            margin-top: 27px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        // @media (min-width:$tablet-width){
+        //     margin-top: 23px;
+        // }
+
         &::after{
             content: "";
             position: absolute;
@@ -98,6 +223,11 @@
             top: 7px;
             background-image: url(../img/prewiev_item/icon-right-arrow-long.svg);
             background-repeat: no-repeat;
+
+            @media(min-width:$tablet-width){
+                top: 10px;
+                margin-left: 25px;
+            }
         }
 
     }

@@ -378,6 +378,13 @@ img {
   flex-wrap: wrap;
   gap: 20px;
 }
+@media (min-width: 1444px) {
+  .catalog-preview {
+    flex-direction: row;
+    gap: 80px;
+    margin-top: 72px;
+  }
+}
 
 .catalog-preview__item {
   display: flex;
@@ -385,6 +392,21 @@ img {
   padding-left: 20px;
   padding-right: 20px;
   background-color: #f2f2f2;
+}
+@media (min-width: 768px) {
+  .catalog-preview__item {
+    flex-direction: column;
+    position: relative;
+    min-height: 372px;
+    padding-left: 52px;
+  }
+}
+@media (min-width: 1444px) {
+  .catalog-preview__item {
+    flex-direction: row;
+    flex: 1;
+    min-width: 374px;
+  }
 }
 
 .preview-item__icon {
@@ -394,6 +416,25 @@ img {
   margin-top: 24px;
   border-radius: 50%;
   background-color: #68B738;
+}
+@media (min-width: 768px) {
+  .preview-item__icon {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: 62px;
+    top: 81px;
+  }
+}
+@media (min-width: 1444px) {
+  .preview-item__icon {
+    position: relative;
+    right: auto;
+    top: auto;
+    margin-top: 47px;
+    width: 100px;
+    height: 100px;
+  }
 }
 .preview-item__icon--thin::after {
   content: "";
@@ -405,6 +446,22 @@ img {
   background-image: url(../img/prewiev_item/icon-cat-slim.svg);
   background-repeat: no-repeat;
 }
+@media (min-width: 768px) {
+  .preview-item__icon--thin::after {
+    width: 140px;
+    height: 192px;
+    bottom: 19px;
+    left: 30px;
+  }
+}
+@media (min-width: 1444px) {
+  .preview-item__icon--thin::after {
+    width: 70px;
+    height: 97px;
+    bottom: 9px;
+    left: 19px;
+  }
+}
 .preview-item__icon--power::after {
   content: "";
   position: absolute;
@@ -414,6 +471,22 @@ img {
   bottom: 11px;
   background-image: url(../img/prewiev_item/icon-cat-pro.svg);
   background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .preview-item__icon--power::after {
+    width: 268px;
+    height: 112px;
+    bottom: 44px;
+    left: -36px;
+  }
+}
+@media (min-width: 1444px) {
+  .preview-item__icon--power::after {
+    width: 134px;
+    height: 56px;
+    bottom: 24px;
+    left: -19px;
+  }
 }
 
 .preview-item__title {
@@ -425,6 +498,22 @@ img {
   margin-left: 19px;
   text-transform: uppercase;
 }
+@media (min-width: 768px) {
+  .preview-item__title {
+    margin-left: 1px;
+    margin-top: 77px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+@media (min-width: 1444px) {
+  .preview-item__title {
+    margin-left: 62px;
+    margin-top: 77px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
 
 .preview-item__description {
   width: 95%;
@@ -434,13 +523,45 @@ img {
   font-size: 14px;
   line-height: 18px;
 }
+@media (min-width: 768px) {
+  .preview-item__description {
+    width: 60%;
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 1444px) {
+  .preview-item__description {
+    width: 95%;
+    margin-top: 39px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 
 .preview-item__link {
   height: 57px;
   width: 100%;
   margin-top: 23px;
   padding-top: 19px;
-  border-top: 1px solid #d9d9d9;
+}
+@media (max-width: 767px) {
+  .preview-item__link {
+    border-top: 1px solid #d9d9d9;
+  }
+}
+@media (min-width: 768px) {
+  .preview-item__link {
+    margin-top: 48px;
+    padding: 0;
+  }
+}
+@media (min-width: 1444px) {
+  .preview-item__link {
+    margin-top: 23px;
+    padding: 0;
+  }
 }
 .preview-item__link a {
   position: relative;
@@ -451,6 +572,19 @@ img {
   line-height: 16px;
   text-transform: uppercase;
 }
+@media (min-width: 768px) {
+  .preview-item__link a {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .preview-item__link a {
+    margin-top: 27px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 .preview-item__link a::after {
   content: "";
   position: absolute;
@@ -460,5 +594,11 @@ img {
   top: 7px;
   background-image: url(../img/prewiev_item/icon-right-arrow-long.svg);
   background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .preview-item__link a::after {
+    top: 10px;
+    margin-left: 25px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
