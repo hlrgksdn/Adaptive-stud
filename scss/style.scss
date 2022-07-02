@@ -82,10 +82,6 @@ img {
     padding: 0 110px;
     width: 1444px;
     margin: 0 auto;
-    background-image: url(../img/main_promo/index-background-desktop@1x.jpg);
-    background-position: calc(50% + 360px)  0;
-    background-repeat: no-repeat;
-    
   }
 }
 
@@ -113,6 +109,14 @@ img {
 
 // Index page
 
+.container--index{
+  @media(min-width: $descktop-width){
+    background-image: url(../img/main_promo/index-background-desktop@1x.jpg);
+    background-position: calc(50% + 360px)  0;
+    background-repeat: no-repeat;
+  }
+}
+
 @import "main-promo.scss";
 
 @import "catalog-preview.scss";
@@ -126,6 +130,8 @@ img {
 @import "catalog-page.scss";
 
 @import "catalog.scss";
+
+@import "additional-products";
 
 
 

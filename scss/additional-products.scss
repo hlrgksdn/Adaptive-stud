@@ -1,0 +1,306 @@
+.catalog-page__additionals{
+    margin: 0 -20px;
+
+    @media (min-width: $tablet-width){
+        margin: 0 -30px;
+    }
+
+    @media (min-width: $descktop-width){
+        margin: 0 -110px;
+        margin-bottom: 86px;
+    }
+}
+
+.additional-products{
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $tablet-width){
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    @media (min-width: $descktop-width){
+        justify-content: space-between;
+    }
+}
+
+.additional-products__title{
+    position: relative;
+    margin-top: 28px;
+    padding-left: 20px;
+    padding-bottom: 35px;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    background-color: $basic-white-color;
+    overflow: hidden;
+
+    @media (min-width: $tablet-width){
+        width: 100%;
+        margin-top: 68px;
+        padding-left: 67px;
+        padding-bottom: 80px;
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    @media (min-width: $descktop-width){
+        margin-top: 76px;
+        padding-left: 110px;
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 13px;
+        width: 100%;
+        height: 2px;
+        margin-left: 22px;
+        background-color: $basic-button-color;
+
+        @media (min-width: $tablet-width){
+            top: 20px;
+            margin-left: 36px;
+        }
+    }
+
+    &::before{
+        @media (min-width: $tablet-width){
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background-color: $basic-button-color;
+        }
+
+        @media (min-width: $descktop-width){
+            width: 70px;
+            top: 20px;
+            margin-right: 40px;
+        }
+    }
+}
+
+.additional-products__list{
+    padding: 0 20px;
+
+    @media (min-width: $tablet-width){
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    @media (min-width: $descktop-width){
+        width: 896px;
+        min-height: 288px;
+        padding: 0;
+        margin-left: 110px;
+    }
+}
+
+.additional-card{
+    display: flex;
+    flex-direction: column;
+    padding-top: 13px;
+    padding-bottom: 19px;
+    border-top: 1px solid $basic-border-color;
+
+    &:last-child{
+        border-bottom: 1px solid $basic-border-color;
+    }
+
+    @media (min-width: $tablet-width){
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        border-left: 1px solid $basic-border-color;
+        border-right: 1px solid $basic-border-color;
+        padding: 0 38px;
+        padding-top: 26px;
+        padding-bottom: 28px;
+    }
+
+    @media (min-width: $descktop-width){
+        justify-content: start;
+        align-items: center;
+        min-height: 72px;
+        border-left: none;
+        border-right: none;
+        padding: 0;
+    }
+
+
+}
+
+.additional-card__title{
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $light-text-color;
+
+    @media (min-width: $tablet-width){
+        width: max-content;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    @media (min-width: $descktop-width){
+        width: 325px;
+        text-align: left;
+    }
+}
+
+.additional-card__characteristics{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+    font-family: 'Arial';
+    font-size: 14px;
+    line-height: 14px;
+    color: $special-text-color;
+
+    @media (min-width: $tablet-width){
+        justify-content: flex-end;
+        gap: 50px;
+        width: 60%;
+        margin: 0;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    @media (min-width: $descktop-width){
+        width: 325px;
+        justify-content: start;
+        align-items:flex-end;
+    }
+
+    & span{
+        @media (min-width: $tablet-width){
+            min-width: 44px;
+            text-align: right;
+        }
+
+        @media (min-width: $descktop-width){
+            position: relative;
+            top: 3px;
+            width: 325px;
+            text-align: left;
+        }
+    }    
+    
+}
+
+.additional-card__button{
+    min-height: 40px;
+    margin-top: 15px;
+    font-family: 'Oswald';
+    font-size: 16px;
+    line-height: 0px;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width){
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    @media (min-width: $descktop-width){
+        width: 244px;
+        margin: 0;
+    }
+}
+
+.catalog-page__gift{
+    padding: 0 20px;
+    padding-bottom: 35px;
+    margin-top: 39px;
+
+    @media (min-width: $tablet-width){
+        width: 100%;
+        padding: 0 30px;
+        padding-bottom: 76px;
+        margin-top: 69px;
+    }
+
+    @media (min-width: $descktop-width){
+        width: 245px;
+        height: 289px;
+        padding: 0;
+        margin: 0;
+        margin-left: 79px;
+        margin-right: 110px;
+
+    }
+}
+
+.gift-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 289px;
+    background-image: url(../img/gift_card/gift-photo-mobile@1x.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width){
+        justify-content: space-between;
+        min-height: 200px;
+        flex-direction: row;
+        background-image: url(../img/gift_card/gift-photo-tablet@1x.jpg);
+    }
+
+    @media (min-width: $descktop-width){
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        min-height: 289px;
+        background-image: url(../img/gift_card/gift-photo-desktop@1x.jpg);
+    }
+}
+
+.gift-card__icon{
+    margin-top: 65px;
+
+    @media (min-width: $tablet-width){
+        margin: 0;
+        margin-left: 89px;
+    }
+
+    @media (min-width: $descktop-width){
+        margin: 0;
+        margin-top: 63px;
+    }
+}
+
+.gift-card__title{
+    width: 161px;
+    margin-top: 61px;
+    font-family: 'Arial';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: $basic-white-color;
+
+    @media (min-width: $tablet-width){
+        width: 161px;
+        margin: 0;
+        margin-right: 124px;
+        text-align: left;
+    }
+
+    @media (min-width: $descktop-width){
+        margin: 0;
+        margin-top: 60px;
+        text-align: center;
+    }
+}
+

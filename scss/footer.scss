@@ -26,6 +26,7 @@
     align-items:center;
     min-height: 114px;
     padding: 0 20px;
+    background-color:$basic-background-color;
     
     @media(min-width: $tablet-width){
         padding: 0 71px;
@@ -43,6 +44,9 @@
         background-color:$basic-white-color;
     }
     
+    &--main{
+        background-color: $basic-white-color;
+    }
 }
 
 .contact__title{
