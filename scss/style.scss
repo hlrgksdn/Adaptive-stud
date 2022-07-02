@@ -102,10 +102,16 @@ img {
     overflow: hidden;
   }
 
+// General
 
 @import "page-header.scss";
 
+@import "footer";
+
 @import "button.scss";
+
+
+// Index page
 
 @import "main-promo.scss";
 
@@ -115,4 +121,11 @@ img {
 
 @import "example.scss";
 
-@import "footer";
+// Catalog page
+
+@import "catalog-page.scss";
+
+@import "catalog.scss";
+
+
+

@@ -1,0 +1,25 @@
+.catalog-page{
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-page__title{
+    display: flex;
+    align-items: center;
+    min-height: 104px;
+    margin: 0 -20px;
+    padding-left: 20px;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    border-top: 1px solid $basic-border-color;
+
+    @media (min-width: $tablet-width){
+        margin: 0;
+        padding: 0;
+        border: none;
+        font-size: 60px;
+        line-height: 60px;
+    }
+}
