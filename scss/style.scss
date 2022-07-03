@@ -27,6 +27,7 @@ $error-color: #FF8282;
 $basic-white-color: #ffffff; 
 $basic-black-color: #000000;
 $basic-border-color: #cdcdcd;
+$input-border-color: #E7E7E7;
 
 
 /* Var-media */
@@ -98,7 +99,7 @@ img {
     overflow: hidden;
   }
 
-// General
+// General.................................................
 
 @import "page-header.scss";
 
@@ -107,7 +108,7 @@ img {
 @import "button.scss";
 
 
-// Index page
+// Index page................................................
 
 .container--index{
   @media(min-width: $descktop-width){
@@ -125,7 +126,7 @@ img {
 
 @import "example.scss";
 
-// Catalog page
+// Catalog page...................................................
 
 @import "catalog-page.scss";
 
@@ -133,5 +134,7 @@ img {
 
 @import "additional-products";
 
+// Form page...................................................
 
+@import "order-page";
 

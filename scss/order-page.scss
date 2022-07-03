@@ -1,0 +1,211 @@
+.page-main__order{
+    margin: 0 -20px;
+}
+
+.order-page__title{
+    padding: 0 20px;
+    padding-top: 27px;
+    border-top: 1px solid $basic-border-color;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.order-page__subtitle{
+    padding: 0 20px;
+    margin-top: 37px;
+    width: 75%;
+    font-family: 'Oswald';
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.order-form__main-info{
+    margin-top: 39px;
+}
+
+.main-form{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding: 0 20px;
+    padding-bottom: 27px;
+}
+
+.main-form__item{
+    display: flex;
+    gap: 14px;
+}
+
+.main-form__item-name{
+    width: max-content;
+    align-self: center;
+    color: $special-text-color;
+    font-family:'Oswald';
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.main-form__input{
+    border: none;
+    outline: none;
+    flex: 1;
+    min-height: 45px;
+    padding: 0 15px;
+    border: 1px solid $input-border-color;
+    color: $special-text-color;
+    font-family: 'Oswald';
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    &:hover{
+        border-color: $basic-border-color;
+    }
+
+    &:focus{
+        border-color: $special-text-color;
+    }
+
+    &:invalid{
+        border-color: $error-color;
+    }
+
+}
+
+.programm-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 13px;
+    padding: 0 20px;
+    padding-top: 20px;
+    padding-bottom: 22px;
+    border-top: 1px solid $basic-border-color;
+    border-bottom: 1px solid $basic-border-color;
+    
+}
+
+.programm-form__name{
+    display: flex;
+    position: relative;
+    min-height: 30px;
+    align-items: center;
+    font-family: 'Oswald';
+    font-size: 16px;
+    line-height: 18px;
+    // padding-left: 45px;
+    text-transform: uppercase;
+
+    &::before{
+        content: "";
+        // position: absolute;
+        width: 30px;
+        height: 30px;
+        margin-right: 15px;
+        left:0;
+        // background-color: $basic-white-color;
+        border: 1px solid $basic-border-color;
+        border-radius: 50%;
+    }
+}
+
+.programm-form__radio:checked+.programm-form__name::after{
+    content: "";
+    position: absolute;
+    width: 13.5px;
+    height: 13.5px;
+    left: 8.5px;
+    background-color: $basic-button-color;
+    border-radius: 50%;
+}
+
+.order-form__contacts{
+    margin-top: 26px;
+}
+
+.order-form__title{
+    position: relative;
+    padding-left: 20px;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    overflow: hidden;
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 13px;
+        width: 100%;
+        height: 2px;
+        margin-left: 22px;
+        background-color: $basic-button-color;
+    }
+
+    &--contact{
+        &::after{
+            margin-left: 47px;
+        }
+    }
+}
+
+.contacts-form__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 0 20px;
+    padding-top: 32px;
+    padding-bottom: 27px;
+}
+
+.contacts-form__item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 45px;
+}
+
+.contacts-form__name{
+    font-family: 'Oswald';
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.contacts-form__input{
+    flex: 1;
+    border: none;
+    outline: none;
+    height: 45px;
+    padding: 0 15px;
+    font-family: 'Oswald';
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    border: 1px solid $basic-border-color; 
+}
+
+.comment-form__wrapper{
+    padding: 0 20px;
+    margin-top: 34px;
+
+}
+
+.order-form__placeholder{
+    width: 100%;
+    height: 150px;
+    padding: 13px;
+    border: none;
+    outline: none;
+    border: 1px solid $basic-border-color;
+    font-family: 'Oswald';
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
