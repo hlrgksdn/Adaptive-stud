@@ -78,25 +78,29 @@
 
           <div class="order-form__additional additional-form">
             <p class="order-form__title">Дополнительно</p>
-            <div class="additional-form__item">
-              <input class="additional-form__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
-              <label class="additional-form__name" for="sweetener">Сахарозаменитель</label>
-            </div>
-            <div class="additional-form__item">
-              <input class="additional-form__checkbox" type="checkbox" name="water" id="water">
-              <label class="additional-form__name" for="water">Питьевая вода</label>
-            </div>
-            <div class="additional-form__item">
-              <input class="additional-form__checkbox" type="checkbox" name="milk" id="milk">
-              <label class="additional-form__name" for="milk">Молоко</label>
-            </div>
-            <div class="additional-form__item">
-              <input class="additional-form__checkbox" type="checkbox" name="vitamins" id="vit">
-              <label class="additional-form__name" for="vit">Витамины</label>
+            <div class="additional-form__wrapper">
+              <div class="additional-form__item">
+                <input class="additional-form__checkbox visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
+                <label class="additional-form__name" for="sweetener">Сахарозаменитель</label>
+              </div>
+              <div class="additional-form__item">
+                <input class="additional-form__checkbox visually-hidden" type="checkbox" name="water" id="water">
+                <label class="additional-form__name" for="water">Питьевая вода</label>
+              </div>
+              <div class="additional-form__item">
+                <input class="additional-form__checkbox visually-hidden" type="checkbox" name="milk" id="milk">
+                <label class="additional-form__name" for="milk">Молоко</label>
+              </div>
+              <div class="additional-form__item">
+                <input class="additional-form__checkbox visually-hidden" type="checkbox" name="vitamins" id="vit">
+                <label class="additional-form__name" for="vit">Витамины</label>
+              </div>
             </div>
           </div>
 
-          <button class="button order-form__submit" type="submit">Отправить заявку</button>
+          <div class="button__wrapper">
+            <button class="button order-form__submit" type="submit">Отправить заявку</button>
+          </div>
           <p class="order-form__note">* — Обязательные поля</p>
         </form>
 
