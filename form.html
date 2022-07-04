@@ -23,35 +23,39 @@
 
       <main class="page-main__order order-page">
         <h1 class="title order-page__title">Подбор программы</h1>
-        <p class="order-page__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="order-page__subtitle">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
         <form class="order-page__form order-form">
-          <div class="order-form__main-info main-form">
-            <div class="main-form__item">
-              <label class="main-form__item-name order-form__item-name--main" for="pet-name">Имя:*</label>
-              <input class="main-form__input" type="text" name="name" value="Барсик" id="pet-name">
+          <div class="order-form__wrapper">
+            <div class="order-form__main-info main-form">
+              <div class="main-form__item">
+                <label class="main-form__item-name order-form__item-name--main" for="pet-name">Имя:*</label>
+                <input class="main-form__input" type="text" name="name" value="Барсик" id="pet-name">
+              </div>
+              <div class="main-form__item">
+                <label class="main-form__item-name order-form__item-name--main" for="pet-weight">Вес (кг):*</label>
+                <input class="main-form__input" type="text" name="weight" value="7" id="pet-weight">
+              </div>
+              <div class="main-form__item">
+                <label class="main-form__item-name order-form__item-name--main" for="pet-age">Возраст (лет):</label>
+                <input class="main-form__input" type="text" name="age" value="7" id="pet-age">
+              </div>
             </div>
-            <div class="main-form__item">
-              <label class="main-form__item-name order-form__item-name--main" for="pet-weight">Вес (кг):*</label>
-              <input class="main-form__input" type="text" name="weight" value="7" id="pet-weight">
-            </div>
-            <div class="main-form__item">
-              <label class="main-form__item-name order-form__item-name--main" for="pet-age">Возраст (лет):</label>
-              <input class="main-form__input" type="text" name="age" value="7" id="pet-age">
-            </div>
-          </div>
-
-          <div class="order-form__programm programm-form">
-            <div class="programm-form__item">
-              <input class="programm-form__radio visually-hidden" type="radio" name="pogramm" value="slim-programm" id="slim" checked>
-              <label class="programm-form__name" for="slim">Похудение</label>
-            </div>
-            <div class="programm-form__item">
-              <input class="programm-form__radio visually-hidden" type="radio" name="pogramm" value="power-programm" id="power">
-              <label class="programm-form__name" for="power">Набор массы</label>
-            </div>
-            <div class="programm-form__item">
-              <input class="programm-form__radio visually-hidden" type="radio" name="pogramm" value="need-help" id="help">
-              <label class="programm-form__name" for="help">Не знаю (нужен ваш совет)</label>
+  
+            <div class="programm-form__wrapper">
+              <div class="order-form__programm programm-form">
+                <div class="programm-form__item">
+                  <input class="programm-form__radio visually-hidden" type="radio" name="pogramm" value="slim-programm" id="slim" checked>
+                  <label class="programm-form__name" for="slim">Похудение</label>
+                </div>
+                <div class="programm-form__item">
+                  <input class="programm-form__radio visually-hidden" type="radio" name="pogramm" value="power-programm" id="power">
+                  <label class="programm-form__name" for="power">Набор массы</label>
+                </div>
+                <div class="programm-form__item">
+                  <input class="programm-form__radio visually-hidden" type="radio" name="pogramm" value="need-help" id="help">
+                  <label class="programm-form__name" for="help">Не знаю (нужен ваш совет)</label>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -100,8 +104,9 @@
 
           <div class="button__wrapper">
             <button class="button order-form__submit" type="submit">Отправить заявку</button>
+            <p class="order-form__note">* — Обязательные поля</p>
           </div>
-          <p class="order-form__note">* — Обязательные поля</p>
+          
         </form>
 
       
