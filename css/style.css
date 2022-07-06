@@ -417,6 +417,12 @@ img {
     background-repeat: no-repeat;
   }
 }
+@media (min-width: 1444px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1444px) and (min-resolution: 2dppx) {
+  .container--index {
+    background-image: url(../img/main_promo/index-background-desktop@2x.jpg);
+    background-size: 720px 696px;
+  }
+}
 
 @media (max-width: 767px) {
   .main-promo__wrapper {
@@ -429,6 +435,11 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
+  .main-promo__wrapper {
+    background-image: url(../img/main_promo/index-background-mobile@2x.jpg);
   }
 }
 
@@ -1139,19 +1150,26 @@ img {
 }
 
 .slider__img {
-  margin-top: 44px;
+  position: absolute;
+  width: 320px;
+  height: 240px;
+  top: 24px;
   align-self: center;
 }
 @media (min-width: 768px) {
   .slider__img {
     position: absolute;
-    top: -191px;
+    width: 690px;
+    height: 517px;
+    top: -90px;
+    left: center;
   }
 }
 @media (min-width: 1444px) {
   .slider__img {
     position: absolute;
-    top: -291px;
+    top: -240px;
+    left: 8%;
   }
 }
 
@@ -1159,11 +1177,13 @@ img {
   display: flex;
   justify-content: center;
   gap: 13px;
+  margin-top: 297px;
   padding-top: 25px;
   padding-bottom: 39px;
 }
 @media (min-width: 768px) {
   .slider__progress {
+    margin-top: 0;
     padding: 0;
     padding-bottom: 67px;
     gap: 20px;
@@ -1354,7 +1374,7 @@ img {
   .product-card__picture {
     width: 100%;
     position: absolute;
-    top: -73px;
+    bottom: 350px;
     left: 0;
   }
 }
@@ -1364,8 +1384,7 @@ img {
 }
 @media (min-width: 768px) {
   .product-card__picture img {
-    width: 168px;
-    height: 200px;
+    width: 324px;
   }
 }
 
@@ -2249,7 +2268,16 @@ img {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #E7E7E7;
+}
+.contacts-form__input:hover {
+  border-color: #cdcdcd;
+}
+.contacts-form__input:focus {
+  border-color: #444444;
+}
+.contacts-form__input:invalid {
+  border-color: #FF8282;
 }
 
 .comment-form__wrapper {

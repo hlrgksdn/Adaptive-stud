@@ -28,6 +28,7 @@ $basic-white-color: #ffffff;
 $basic-black-color: #000000;
 $basic-border-color: #cdcdcd;
 $input-border-color: #E7E7E7;
+$hover-color: #bababa;
 
 
 /* Var-media */
@@ -115,6 +116,11 @@ img {
     background-image: url(../img/main_promo/index-background-desktop@1x.jpg);
     background-position: calc(50% + 360px)  0;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx){
+      background-image: url(../img/main_promo/index-background-desktop@2x.jpg);
+      background-size: 720px 696px;
+    }
   }
 }
 

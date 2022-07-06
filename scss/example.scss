@@ -208,17 +208,24 @@
 }
 
 .slider__img{
-    margin-top: 44px;
+    position: absolute;
+    width: 320px;
+    height: 240px;
+    top: 24px;
     align-self: center;
 
     @media (min-width:$tablet-width){
         position: absolute;
-        top: -191px;
+        width: 690px;
+        height: 517px;
+        top: -90px;
+        left: center;
     }
 
     @media (min-width:$descktop-width){
         position: absolute;
-        top: -291px;
+        top: -240px;
+        left: 8%;
     }
 }
 
@@ -226,10 +233,12 @@
     display: flex;
     justify-content: center;
     gap: 13px;
+    margin-top: 297px;
     padding-top: 25px;
     padding-bottom: 39px;
 
     @media (min-width: $tablet-width){
+        margin-top: 0;
         padding: 0;
         padding-bottom: 67px;
         gap: 20px;

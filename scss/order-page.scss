@@ -214,6 +214,8 @@
     }
 }
 
+
+
 .programm-form__radio:checked+.programm-form__name::after{
     content: "";
     position: absolute;
@@ -229,6 +231,8 @@
         left: 11.5px;
     }
 }
+
+
 
 .order-form__contacts{
     margin-top: 26px;
@@ -365,7 +369,19 @@
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
-    border: 1px solid $basic-border-color; 
+    border: 1px solid $input-border-color; 
+
+    &:hover{
+        border-color: $basic-border-color;
+    }
+
+    &:focus{
+        border-color: $special-text-color;
+    }
+
+    &:invalid{
+        border-color: $error-color;
+    }
 }
 
 .comment-form__wrapper{
