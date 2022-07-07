@@ -335,6 +335,7 @@
 }
 
 .contacts-form__item{
+    position: relative;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -381,6 +382,24 @@
 
     &:invalid{
         border-color: $error-color;
+    }
+
+    &:focus+.contact-form__icon{
+        fill: $basic-button-color;
+    }
+}
+
+.contact-form__icon{
+    position: absolute;
+    
+    &--mail{
+        right:19px;
+        top: 20px;
+    }
+
+    &--phone{
+        right:17px;
+        top: 17px;
     }
 }
 

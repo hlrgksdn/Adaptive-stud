@@ -83,14 +83,28 @@
     background-position:center;
     background-repeat: no-repeat;
 
+    @media (min-resolution: 2dppx){
+        background-image: url(../img/map/bg-map-mobile@2x.png);
+
+    }
+
     @media (min-width: $tablet-width){
         min-height: 400px;
         background-image: url(../img/map/bg-map-tablet@1x.png)
+       
+    }
+
+    @media (min-width: $tablet-width) and (min-resolution: 2dppx){
+        background-image: url(../img/map/bg-map-tablet@2x.png)
     }
     
     @media (min-width: $descktop-width){
         min-height: 400px;
         background-image: url(../img/map/bg-map-desktop@1x.png)
+    }
+
+    @media (min-width: $descktop-width) and (min-resolution: 2dppx){
+        background-image: url(../img/map/bg-map-desktop@2x.png)
     }
 }
 
@@ -129,10 +143,23 @@
     min-height: 63px;
     border-top:1px solid $basic-border-color;
     border-bottom:1px solid $basic-border-color;
-
+    
     @media (min-width: $tablet-width){
         width: auto;
         border: none;
+    }
+}
+
+.social-list__link{
+    fill: $special-text-color;
+
+    &:hover{
+        fill: $basic-button-color;
+    }
+
+    &:active{
+        fill: $basic-button-color;
+        opacity: 0.3;
     }
 }
 
@@ -146,6 +173,15 @@
     @media (min-width: $tablet-width){
         width: auto;
     }
+
+    &:hover{
+        color: $basic-black-color;
+        fill: $basic-button-color;
+    }
+
+    &:active{
+        opacity: 0.3;
+    }
 }
 
 .copyright__text{
@@ -153,5 +189,8 @@
     font-size: 16px;
     line-height: 18px;
     color: $special-text-color;
+
 }
+
+
 

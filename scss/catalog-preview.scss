@@ -228,6 +228,16 @@
             }
         }
 
+        &:hover{
+            &::after{
+            background-image: url(../img/prewiev_item/icon-right-arrow-verylong.svg);
+            }
+        }
+
+        &:active{
+            opacity: 0.3;
+        }
+
     }
 }
 
